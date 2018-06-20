@@ -102,6 +102,7 @@ song_temp = ["Simple Song","Sweet Louise","The Boy Who Cried Wolf","Walls","Sett
 # songs = pd.read_csv('passenger-df.csv')
 # print(songs)
 
+# # Generate examples: saved in passenger-generated-examples
 textgen = tg()
 textgen.train_from_file('passenger-tgr.txt',num_epochs=10)
 examples = textgen.generate(5)
